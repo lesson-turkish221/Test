@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Sitesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-page">
+    <h2>Giriş Yap</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Kullanıcı Adı" required>
+      <input type="password" id="password" placeholder="Şifre" required>
+      <button type="submit">Giriş Yap</button>
+    </form>
+  </div>
+
+  <div id="quiz-page" style="display: none;">
+    <h2>Quiz Başladı!</h2>
+    <div id="question-container"></div>
+    <button id="next-button" onclick="nextQuestion()">Sonraki</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
